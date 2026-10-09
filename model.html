@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>查看模型 | 智元机器人</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-shell">
+  <nav class="page-nav">
+    <div class="nav-left">
+      <a href="index.html">首页</a>
+      <a href="interaction.html">交互</a>
+      <a href="support.html">支持</a>
+    </div>
+    <a class="page-logo" href="index.html">智元机器人</a>
+    <a class="browse-button active" href="model.html">浏览模型 <span>→</span></a>
+  </nav>
+  <main class="content-page">
+    <section class="content-hero">
+      <h1>3D 模型查看</h1>
+      <p>拖动下方机器人模型，可查看正面、侧面和背部结构。背部包含电池仓、散热孔与维护接口，用于说明真实部署中的检修与连接逻辑。</p>
+    </section>
+    <section class="model-page-stage" data-robot-stage aria-label="可拖动旋转的机器人 3D 模型">
+      <div class="css-robot model-page-robot" data-css-robot aria-label="3D 具身智能机器人模型">
+        <img class="robot-view robot-front active" src="assets/robot-front-threeview.png" alt="智元机器人正面">
+        <img class="robot-view robot-side-view" src="assets/robot-side-threeview.png" alt="智元机器人侧面">
+        <img class="robot-view robot-back-view" src="assets/robot-back-threeview.png" alt="智元机器人背面">
+      </div>
+    </section>
+  </main>
+  <script src="js/robot-model.js"></script>
+</body>
+</html>

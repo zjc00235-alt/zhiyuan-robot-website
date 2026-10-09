@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智元机器人</title>
+  <meta name="description" content="智元机器人展示具身智能机器人模型、交互能力与多场景服务方案。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="robot-hero" aria-label="智元机器人首页">
+    <div class="space-scene" aria-hidden="true">
+      <span class="orbit orbit-one"></span>
+      <span class="orbit orbit-two"></span>
+      <span class="orbit orbit-three"></span>
+      <span class="star star-one"></span>
+      <span class="star star-two"></span>
+      <span class="star star-three"></span>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <nav class="hero-nav" aria-label="主导航">
+      <div class="nav-left">
+        <a class="active" href="index.html">首页</a>
+        <a href="interaction.html">交互</a>
+        <a href="support.html">支持</a>
+      </div>
+      <a class="text-logo" href="index.html" aria-label="智元机器人首页">智元机器人</a>
+      <a class="browse-button" href="model.html">
+        浏览模型 <span>→</span>
+      </a>
+    </nav>
+
+    <h1 class="giant-headline">ROBOT MODEL</h1>
+
+    <div class="robot-stage" data-robot-stage aria-label="可旋转查看背面的 3D 机器人模型">
+      <div class="css-robot" data-css-robot aria-label="3D 具身智能机器人模型">
+        <img class="robot-view robot-front active" src="assets/robot-front-threeview.png" alt="智元机器人正面">
+        <img class="robot-view robot-side-view" src="assets/robot-side-threeview.png" alt="智元机器人侧面">
+        <img class="robot-view robot-back-view" src="assets/robot-back-threeview.png" alt="智元机器人背面">
+      </div>
+      <div class="product-chip chip-one">全身智能模型</div>
+      <a class="product-chip chip-two" href="scenarios.html">多场景服务</a>
+    </div>
+
+    <div class="hero-copy-block">
+      <h2>具身智能机器人</h2>
+      <p>面向展厅、零售、导览与服务场景打造的智元机器人模型，融合灵巧双臂、视觉感知与自然交互能力，让智能服务走进真实空间。</p>
+      <div class="spec-line">
+        <span>12 自由度</span>
+        <span>视觉感知</span>
+        <span>语音交互</span>
+      </div>
+      <a class="discover-button" href="model.html">
+        查看模型 <span>↗</span>
+      </a>
+    </div>
+  </section>
+
+  <script src="js/robot-model.js"></script>
+</body>
+</html>
