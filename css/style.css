@@ -578,6 +578,7 @@ a:hover {
   pointer-events: none;
   object-fit: contain;
   filter: drop-shadow(0 42px 62px rgba(0, 0, 0, 0.76));
+  animation: robot-view-cycle 9s infinite;
 }
 
 .robot-view.active {
@@ -587,10 +588,17 @@ a:hover {
 
 .robot-side-view {
   height: min(565px, 100%);
+  animation-delay: 3s;
 }
 
 .robot-back-view {
   height: min(565px, 100%);
+  animation-delay: 6s;
+}
+
+.css-robot.js-ready .robot-view,
+.css-robot.is-interacting .robot-view {
+  animation: none;
 }
 
 .css-robot.view-side-left .robot-side-view {
@@ -599,6 +607,20 @@ a:hover {
 
 .css-robot.view-side-left .robot-side-view.active {
   opacity: 1;
+}
+
+@keyframes robot-view-cycle {
+  0%,
+  27% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  33%,
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.96);
+  }
 }
 
 .product-chip {
